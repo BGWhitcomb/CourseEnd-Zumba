@@ -1,30 +1,39 @@
 package com.courseend.zumba.model;
 
+import java.time.LocalDate;
+
 public class Participant {
 
-	private int participantId;
+	private int pid;
 	private String name;
 	private String phone;
 	private String email;
+	private int bid;
 
-	public Participant(int participantId, String name, String phone, String email, int bid) {
+	// Inner join sql
+	private String batchName;
+	private LocalDate scheduledOn;
+	private String startTime;
+
+	public Participant(int pid, String name, String phone, String email, int bid) {
 		super();
-		this.participantId = participantId;
+		this.pid = pid;
 		this.name = name;
 		this.phone = phone;
 		this.email = email;
+		this.bid = bid;
 	}
 
 	public Participant() {
 		super();
 	}
 
-	public int getParticipantId() {
-		return participantId;
+	public int getPid() {
+		return pid;
 	}
 
-	public void setParticipantId(int participantId) {
-		this.participantId = participantId;
+	public void setPid(int pid) {
+		this.pid = pid;
 	}
 
 	public String getName() {
@@ -51,10 +60,42 @@ public class Participant {
 		this.email = email;
 	}
 
+	public int getBid() {
+		return bid;
+	}
+
+	public void setBid(int bid) {
+		this.bid = bid;
+	}
+
+	public String getBatchName() {
+		return batchName;
+	}
+
+	public void setBatchName(String batchName) {
+		this.batchName = batchName;
+	}
+
+	public LocalDate getScheduledOn() {
+		return scheduledOn;
+	}
+
+	public void setScheduledOn(LocalDate scheduledOn) {
+		this.scheduledOn = scheduledOn;
+	}
+
+	public String getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+
 	@Override
 	public String toString() {
-		return "Participant [participantId=" + participantId + ", name=" + name + ", phone=" + phone + ", email="
-				+ email + "]";
+		return "Participant [pid=" + pid + ", name=" + name + ", phone=" + phone + ", email=" + email + ", bid=" + bid
+				+ ", batchName=" + batchName + ", scheduledOn=" + scheduledOn + ", startTime=" + startTime + "]";
 	}
 
 }

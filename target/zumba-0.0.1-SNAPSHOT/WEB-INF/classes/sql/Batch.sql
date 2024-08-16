@@ -1,0 +1,6 @@
+CREATE TABLE Batch (
+    bid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    scheduledOn DATE NOT NULL,
+    startTime TIME NOT NULL
+);

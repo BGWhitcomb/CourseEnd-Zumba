@@ -1,12 +1,8 @@
-com\courseend\zumba\dao\IBatchDAO.class
-com\courseend\zumba\dao\IParticipantDAO.class
 com\courseend\zumba\controller\ParticipantServlet.class
-com\courseend\zumba\service\ParticipantService.class
-com\courseend\zumba\service\IParticipantService.class
 com\courseend\zumba\controller\BatchServlet.class
+com\courseend\zumba\controller\BatchUpdateServlet.class
 com\courseend\zumba\model\Participant.class
-com\courseend\zumba\service\BatchService.class
+com\courseend\zumba\database\Database.class
+com\courseend\zumba\controller\ParticipantUpdateServlet.class
 com\courseend\zumba\model\Batch.class
-com\courseend\zumba\dao\BatchDAO.class
-com\courseend\zumba\dao\ParticipantDAO.class
-com\courseend\zumba\service\IBatchService.class
+com\courseend\zumba\database\DAO.class

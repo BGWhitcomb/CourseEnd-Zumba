@@ -1,19 +1,19 @@
 package com.courseend.zumba.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public class Batch {
 
-	private int batchId;
+	private int bid;
 	private String name;
-	private Date scheduledOn;
+	private LocalDate scheduledOn;
 	private String startTime;
 	private List<Participant> participants;
 
-	public Batch(int batchId, String name, Date scheduledOn, String startTime, List<Participant> participants) {
+	public Batch(int bid, String name, LocalDate scheduledOn, String startTime, List<Participant> participants) {
 		super();
-		this.batchId = batchId;
+		this.bid = bid;
 		this.name = name;
 		this.scheduledOn = scheduledOn;
 		this.startTime = startTime;
@@ -24,12 +24,12 @@ public class Batch {
 		super();
 	}
 
-	public int getBatchId() {
-		return batchId;
+	public int getBid() {
+		return bid;
 	}
 
-	public void setBatchId(int batchId) {
-		this.batchId = batchId;
+	public void setBid(int bid) {
+		this.bid = bid;
 	}
 
 	public String getName() {
@@ -40,12 +40,12 @@ public class Batch {
 		this.name = name;
 	}
 
-	public Date getScheduledOn() {
+	public LocalDate getScheduledOn() {
 		return scheduledOn;
 	}
 
-	public void setScheduledOn(Date scheduledOn) {
-		this.scheduledOn = scheduledOn;
+	public void setScheduledOn(LocalDate date) {
+		this.scheduledOn = date;
 	}
 
 	public String getStartTime() {
@@ -66,8 +66,8 @@ public class Batch {
 
 	@Override
 	public String toString() {
-		return "Batch [batchId=" + batchId + ", name=" + name + ", scheduledOn=" + scheduledOn + ", startTime="
-				+ startTime + ", participants=" + participants + "]";
+		return "Batch [bid=" + bid + ", name=" + name + ", scheduledOn=" + scheduledOn + ", startTime=" + startTime
+				+ ", participants=" + participants + "]";
 	}
 
 }
